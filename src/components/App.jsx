@@ -9,6 +9,7 @@ function App() {
     const newTime = new Date().toLocaleTimeString();
     setTime(newTime);
   }
+  setInterval(getTime, 1000);
 
   return (
     <div className="container">
